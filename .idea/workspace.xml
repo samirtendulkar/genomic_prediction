@@ -68,7 +68,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="141" />
-          <entry key="py" value="742" />
+          <entry key="py" value="746" />
           <entry key="txt" value="37" />
           <entry key="yml" value="142" />
         </counts>
@@ -77,7 +77,7 @@
         <counts>
           <entry key="Dockerfile" value="141" />
           <entry key="PLAIN_TEXT" value="37" />
-          <entry key="Python" value="742" />
+          <entry key="Python" value="746" />
           <entry key="YAML" value="142" />
         </counts>
       </usages-collector>
@@ -94,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/genomic_project/patients/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="308">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -106,7 +106,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/genomic_project/patients/views.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -285,7 +285,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.39027026" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.39027026" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3293979" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -381,18 +381,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/genomic_project/patients/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/genomic_project/patients/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/genomic_project/patients/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

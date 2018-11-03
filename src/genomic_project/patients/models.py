@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class Patients(models.Model):
     """Patients model which has all the patients information"""
-    patient = models.OneToOneField(User, on_delete=models.CASCADE)
+    patient = models.ForeignKey(User, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=35)
     phone = models.CharField(max_length=18)

@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 
 
 class Patients(models.Model):
+    """Patients model which has all the patients information"""
     patient = models.OneToOneField(User, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=25)
     last_name = models.CharField(max_length=35)
@@ -13,6 +14,8 @@ class Patients(models.Model):
 
 
 class Embryo(models.Model):
+    """A ForeignKey model to patient"""
+    patient = models.ForeignKey(Patients, on_delete=models.CASCADE)
     code_name = models.CharField(max_length=100)
     karyotype = models.CharField(max_length=100)
     down_syndrome = models.BooleanField(default=False)

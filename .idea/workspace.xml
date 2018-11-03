@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5e261693-136e-4277-be06-152385a8655c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patients/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patients/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patients/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patients/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patients/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patients/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patients/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patients/views.py" beforeDir="false" />
-    </list>
+    <list default="true" id="5e261693-136e-4277-be06-152385a8655c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +42,7 @@
     <session id="-1284867940">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.opened" value="2" />
         </counts>
@@ -97,20 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/patient_models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -178,7 +155,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="342" />
     <option name="y" value="50" />
-    <option name="width" value="1188" />
+    <option name="width" value="1473" />
     <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -252,10 +229,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="342" y="50" width="1188" height="977" extended-state="0" />
-    <editor active="true" />
+    <frame x="342" y="50" width="1473" height="977" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1900175" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23195516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -269,8 +245,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.6021622" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.60212517" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3293979" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -353,10 +329,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/patient_models.py">
+    <entry file="file://$PROJECT_DIR$/../profile_rest_api_with_Vagrant/src/profiles_project/profiles_api/patient_models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -365,8 +341,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        <state relative-caret-position="95">
+          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
         </state>
       </provider>
     </entry>

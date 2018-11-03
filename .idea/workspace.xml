@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e261693-136e-4277-be06-152385a8655c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/genomic_project/genomic_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/genomic_project/genomic_project/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/patients/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/patients/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,12 +52,14 @@
         <counts>
           <entry key="Dockerfile" value="1" />
           <entry key="py" value="3" />
+          <entry key="txt" value="1" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Dockerfile" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="3" />
           <entry key="YAML" value="1" />
         </counts>
@@ -66,7 +67,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Dockerfile" value="141" />
-          <entry key="py" value="355" />
+          <entry key="py" value="474" />
           <entry key="txt" value="37" />
           <entry key="yml" value="142" />
         </counts>
@@ -75,7 +76,7 @@
         <counts>
           <entry key="Dockerfile" value="141" />
           <entry key="PLAIN_TEXT" value="37" />
-          <entry key="Python" value="355" />
+          <entry key="Python" value="474" />
           <entry key="YAML" value="142" />
         </counts>
       </usages-collector>
@@ -87,20 +88,29 @@
         <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
-              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/patients/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <marker date="1541233072727" expanded="true" signature="482:894" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/patients/models.py">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1541232556119" expanded="true" signature="481:535" ph="..." />
-              </folding>
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -109,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#639#671#0" expanded="true" />
               </folding>
@@ -140,6 +150,7 @@
         <option value="$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py" />
         <option value="$PROJECT_DIR$/src/genomic_project/genomic_project/urls.py" />
         <option value="$PROJECT_DIR$/src/patients/models.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -149,11 +160,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="671" />
-    <option name="y" value="240" />
-    <option name="width" value="1210" />
-    <option name="height" value="840" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="342" />
+    <option name="y" value="50" />
+    <option name="width" value="1198" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -225,10 +236,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="671" y="240" width="1210" height="840" extended-state="0" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18470791" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11898174" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -242,7 +252,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.371831" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2854054" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -292,7 +302,7 @@
     <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#639#671#0" expanded="true" />
           </folding>
@@ -302,18 +312,25 @@
     <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
-          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/patients/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="462">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1541232556119" expanded="true" signature="481:535" ph="..." />
+            <marker date="1541233072727" expanded="true" signature="482:894" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

@@ -14,7 +14,7 @@ class Patients(models.Model):
 
 
 class Embryo(models.Model):
-    """A ForeignKey model to patient"""
+    """A ForeignKey model to the patient"""
     patient = models.ForeignKey(Patients, on_delete=models.CASCADE)
     code_name = models.CharField(max_length=100)
     karyotype = models.CharField(max_length=100)

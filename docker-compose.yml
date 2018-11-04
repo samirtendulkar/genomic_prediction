@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    build: .gitignore
+    build: .
     command: python src/genomic_project/manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/code

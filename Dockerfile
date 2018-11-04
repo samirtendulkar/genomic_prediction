@@ -9,6 +9,3 @@ RUN pip install -r requirements.txt
 
 
 
-build:
-  context: .
-  dockerfile: DockerFilePython

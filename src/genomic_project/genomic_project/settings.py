@@ -84,16 +84,6 @@ WSGI_APPLICATION = 'genomic_project.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'GenomicPostgres',
-#         'USER': 'samir',
-#         'PASSWORD': 'samirpass9',
-#         'HOST': 'db',
-#         'PORT': '5432',
-#     }
-# }
 
 
 DATABASES = {

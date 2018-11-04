@@ -23,7 +23,7 @@ class Patient(models.Model):
 
 class Embryo(models.Model):
     """A ForeignKey model to the patient"""
-    patient = models.ForeignKey(Patient, on_delete=models.CASCADE)
+    patient = models.ForeignKey(Patient, related_name="embryos", on_delete=models.CASCADE)
     code_name = models.CharField(max_length=100)
     karyotype = models.CharField(max_length=100)
     down_syndrome = models.BooleanField(default=False)

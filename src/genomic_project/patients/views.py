@@ -50,7 +50,11 @@ class EmbroApiView(viewsets.ModelViewSet):
     search_fields = ("code_name", "karyotype", "sex", "down_syndrome",)
 
     def perform_create(self, serializer):
-        serializer.save(patient__id=self.kwargs['pk'])
+        serializer.save(pk=self.kwargs.get("pk"))
+
+
+
+
 
 
 

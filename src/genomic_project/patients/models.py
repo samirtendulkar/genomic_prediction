@@ -18,7 +18,7 @@ class Patient(models.Model):
         return "%s %s" % (self.first_name, self.last_name)
 
     def __str__(self):
-        return self.email
+        return "%s %s" % (self.full_name, self.email)
 
 
 class Embryo(models.Model):
@@ -26,7 +26,7 @@ class Embryo(models.Model):
     patient = models.ForeignKey(Patient, related_name="embryos", on_delete=models.CASCADE)
     code_name = models.CharField(max_length=100)
     karyotype = models.CharField(max_length=100)
-    down_syndrome = models.BooleanField(default=False)
+    down_syndrome = models.BooleanField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     GENDER_CHOICES = (
@@ -34,9 +34,29 @@ class Embryo(models.Model):
         ("F", "Female"),
 
     )
-    sex = models.CharField(max_length=1, choices=GENDER_CHOICES)
+    sex = models.CharField(blank=True, null=True, max_length=1, choices=GENDER_CHOICES)
 
-    def __str__(self):
-        return self.code_name
+    def set_sex(self):
+        if self.karyotype == "46,XX":
+            self.sex = "F"
+        elif self.karyotype == "46,XY":
+            self.sex = "M"
+
+    def set_down_syndrome(self):
+        if self.karyotype == "47,XY,+21":
+            self.down_syndrome = True
+            self.sex = "M"
+        elif self.karyotype == "47,XX,+21":
+            self.down_syndrome = True
+            self.sex = "F"
+        else:
+            self.down_syndrome = False
+
+    def save(self, *args, **kwargs):
+        if not self.sex:
+            self.set_sex()
+        self.set_down_syndrome()
+        return super(Embryo, self).save(*args, **kwargs)
+
 
 

@@ -41,6 +41,8 @@ class Embryo(models.Model):
             self.sex = "F"
         elif self.karyotype == "46,XY":
             self.sex = "M"
+        else:
+            self.sex = ""
 
     def set_down_syndrome(self):
         if self.karyotype == "47,XY,+21":
@@ -53,8 +55,7 @@ class Embryo(models.Model):
             self.down_syndrome = False
 
     def save(self, *args, **kwargs):
-        if not self.sex:
-            self.set_sex()
+        self.set_sex()
         self.set_down_syndrome()
         return super(Embryo, self).save(*args, **kwargs)
 

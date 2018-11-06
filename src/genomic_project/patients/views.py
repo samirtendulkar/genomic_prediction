@@ -1,13 +1,11 @@
-from django.shortcuts import render
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
 from rest_framework import viewsets
 from rest_framework.authentication import TokenAuthentication
 from rest_framework import filters
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.permissions import IsAuthenticated
+from django.template.loader import get_template
+from django.core.mail import EmailMessage
 
 
 from . import serializers
@@ -37,6 +35,20 @@ class PatientsApiView(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
+        patient = serializer.save()
+        try:
+            patient_create_email(patient_id=patient.id)
+            print('An email has been sent to the customer.')
+        except IOError as e:
+            return e
+
+    def perform_update(self, serializer):
+        patient = serializer.save()
+        try:
+            patient_update_email(patient_id=patient.id)
+            print('An email has been sent to the customer.')
+        except IOError as e:
+            return e
 
 
 class EmbroApiView(viewsets.ModelViewSet):
@@ -51,13 +63,101 @@ class EmbroApiView(viewsets.ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(pk=self.kwargs.get("pk"))
+        embryo = serializer.save()
+        try:
+            embryo_create_email(patient_id=embryo.patient.id)
+            print('An email has been sent to the customer.')
+        except IOError as e:
+            return e
+
+    def perform_update(self, serializer):
+        serializer.save(pk=self.kwargs.get("pk"))
+        embryo = serializer.save()
+        try:
+            embryo_update_email(patient_id=embryo.patient.id)
+            print('An email has been sent to the customer.')
+        except IOError as e:
+            return e
 
 
+def patient_create_email(patient_id):
+    patient = Patient.objects.get(id=patient_id)
+    embryos = Embryo.objects.filter(patient=patient)
+    try:
+        '''Sending the Update to the patient'''
+        subject = "Gemonic Prediction added you to the system #{}".format(patient_id)
+        to = ['{}'.format(patient.email)]
+        from_email = "no_reply@genomicprediction.com/"
+        patient_information = {
+            'patient': patient,
+            'embryos': embryos
+        }
+        message = get_template('patients/email.html').render(patient_information)
+        msg = EmailMessage(subject, message, to=to, from_email=from_email)
+        msg.content_subtype = 'html'
+        msg.send()
+    except IOError as e:
+        return e
 
 
+def patient_update_email(patient_id):
+    patient = Patient.objects.get(id=patient_id)
+    embryos = Embryo.objects.filter(patient=patient)
+    try:
+        '''Sending the Update to the patient'''
+        subject = "Gemonic Prediction updated your details #{}".format(patient_id)
+        to = ['{}'.format(patient.email)]
+        from_email = "no_reply@genomicprediction.com/"
+        patient_information = {
+            'patient': patient,
+            'embryos': embryos
+        }
+        message = get_template('patients/email.html').render(patient_information)
+        msg = EmailMessage(subject, message, to=to, from_email=from_email)
+        msg.content_subtype = 'html'
+        msg.send()
+    except IOError as e:
+        return e
 
 
+def embryo_create_email(patient_id):
+    patient = Patient.objects.get(id=patient_id)
+    embryos = Embryo.objects.filter(patient=patient)
+    try:
+        '''Sending the Create to the Embryo'''
+        subject = "Gemonic Prediction created a new Embryo for you #{}".format(patient_id)
+        to = ['{}'.format(patient.email)]
+        from_email = "no_reply@genomicprediction.com/"
+        patient_information = {
+            'patient': patient,
+            'embryos': embryos
+        }
+        message = get_template('patients/email.html').render(patient_information)
+        msg = EmailMessage(subject, message, to=to, from_email=from_email)
+        msg.content_subtype = 'html'
+        msg.send()
+    except IOError as e:
+        return e
 
+
+def embryo_update_email(patient_id):
+    patient = Patient.objects.get(id=patient_id)
+    embryos = Embryo.objects.filter(patient=patient)
+    try:
+        '''Sending the Update to the Embryo'''
+        subject = "Gemonic Prediction updated your Embryo #{}".format(patient_id)
+        to = ['{}'.format(patient.email)]
+        from_email = "no_reply@genomicprediction.com/"
+        patient_information = {
+            'patient': patient,
+            'embryos': embryos
+        }
+        message = get_template('patients/email.html').render(patient_information)
+        msg = EmailMessage(subject, message, to=to, from_email=from_email)
+        msg.content_subtype = 'html'
+        msg.send()
+    except IOError as e:
+        return e
 
 
 

@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'fpqz6(*v2i!6a5=52d-@=@8dkl)hc4+*&hq=8yofgbgfu-9n0%'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -141,5 +141,5 @@ STATIC_URL = '/static/'
 EMAIL_HOST = "smtp.mailgun.org"
 EMAIL_PORT = "587"
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = "postmaster@sandboxf4274c66b5da4f54adeaa7a004b5b2c9.mailgun.org"
-EMAIL_HOST_PASSWORD = "55bc1b17a3070ec746b935d80e64a2df-4412457b-81f896e2"
+EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD")

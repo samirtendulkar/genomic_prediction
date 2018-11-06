@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e261693-136e-4277-be06-152385a8655c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/genomic_project/patients/templates/patients/email.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/genomic_project/patients/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/genomic_project/patients/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/genomic_project/patients/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/genomic_project/patients/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +44,7 @@
     <session id="-1284867940">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -80,7 +76,7 @@
         <counts>
           <entry key="Dockerfile" value="263" />
           <entry key="html" value="359" />
-          <entry key="py" value="3009" />
+          <entry key="py" value="3059" />
           <entry key="txt" value="37" />
           <entry key="yml" value="273" />
         </counts>
@@ -90,7 +86,7 @@
           <entry key="Dockerfile" value="263" />
           <entry key="HTML" value="359" />
           <entry key="PLAIN_TEXT" value="37" />
-          <entry key="Python" value="3009" />
+          <entry key="Python" value="3059" />
           <entry key="YAML" value="273" />
         </counts>
       </usages-collector>
@@ -98,11 +94,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/genomic_project/patients/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+            <state relative-caret-position="606">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -131,11 +127,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+            <state relative-caret-position="103">
+              <caret line="111" column="3" selection-start-line="111" selection-start-column="3" selection-end-line="111" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -195,9 +191,9 @@
         <option value="$PROJECT_DIR$/src/genomic_project/patients/serializers.py" />
         <option value="$PROJECT_DIR$/src/genomic_project/patients/patients/templates/email/email.html" />
         <option value="$PROJECT_DIR$/src/genomic_project/patients/patients/templates/patients/email.html" />
-        <option value="$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py" />
         <option value="$PROJECT_DIR$/src/genomic_project/patients/views.py" />
         <option value="$PROJECT_DIR$/src/genomic_project/patients/models.py" />
+        <option value="$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py" />
       </list>
     </option>
   </component>
@@ -430,13 +426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/genomic_project/patients/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="557">
@@ -449,11 +438,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/genomic_project/patients/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+        <state relative-caret-position="606">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/genomic_project/genomic_project/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="111" column="3" selection-start-line="111" selection-start-column="3" selection-end-line="111" selection-end-column="3" />
         </state>
       </provider>
     </entry>

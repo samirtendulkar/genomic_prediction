@@ -1,13 +1,17 @@
 from rest_framework import viewsets
-from rest_framework.authentication import TokenAuthentication
 from rest_framework import filters
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.authtoken.views import ObtainAuthToken
-from rest_framework.permissions import IsAuthenticated
-from django.template.loader import get_template
 from django.core.mail import EmailMessage
-
-
+from io import BytesIO
+from django.template.loader import get_template
+from django.http import HttpResponse
+from xhtml2pdf import pisa
+from rest_framework.decorators import authentication_classes
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.decorators import api_view
+from rest_framework.decorators import permission_classes
+from rest_framework.permissions import IsAuthenticated
 from . import serializers
 from .models import Patient, Embryo
 
@@ -160,6 +164,32 @@ def embryo_update_email(patient_id):
         return e
 
 
+def render_to_pdf(template_src, context_dict={}):
+    template = get_template(template_src)
+    html = template.render(context_dict)
+    result = BytesIO()
+    pdf = pisa.pisaDocument(BytesIO(html.encode("ISO-8859-1")), result)
+    if not pdf.err:
+        return HttpResponse(result.getvalue(), content_type='application/pdf')
+    return None
 
 
+@api_view(http_method_names=['GET'])
+@authentication_classes((TokenAuthentication,))
+@permission_classes((IsAuthenticated,))
+def generate_pdf(request, pk):
+    patient = Patient.objects.get(pk=pk)
+    embryos = Embryo.objects.filter(patient=patient)
+    context = {
+        "patient": patient,
+        "embryos": embryos
+    }
+    pdf = render_to_pdf("patients/genome_pdf.html", context)
+    if pdf:
+        response = HttpResponse(pdf, content_type="application/pdf")
+        filename = "Genomic_report_for_{}.pdf".format(patient.full_name)
+        content = "inline; filename={}".format(filename)
+        response["Content-Disposition"] = content
+        return response
+    return HttpResponse("Not found")
 

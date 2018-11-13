@@ -187,7 +187,7 @@ def generate_pdf(request, pk):
     pdf = render_to_pdf("patients/genome_pdf.html", context)
     if pdf:
         response = HttpResponse(pdf, content_type="application/pdf")
-        filename = "Genomic_report_for_{}.pdf".format(patient.full_name)
+        filename = "Genomic_report_for_{}.pdf".format(patient.last_name)
         content = "inline; filename={}".format(filename)
         response["Content-Disposition"] = content
         return response
